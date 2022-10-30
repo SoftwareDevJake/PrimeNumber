@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function perfectNumber()
+        {
+            var perfect = 0;
+            var num = prompt("Type a number.");
+
+            for(let i = 2; i < num; i++)
+            {
+                if(num % i == 0)
+                {
+                    alert("It isn't a perfect number.");
+                    
+                    return;
+                }
+            }
+            perfect = num;
+            alert(perfect+" is perfect number.");
+            return;
+        }
+    </script>
+    <Button onClick="perfectNumber()">Click here and put command in it.</Button>
+</body>
+</html>
